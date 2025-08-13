@@ -103,4 +103,22 @@ a {
     color: white;
 }
 
-@media (min-width: 720px) {}
+@media (min-width: 720px) {
+    .main-header {
+        height: clamp(20vh, 30vw, 45vh);
+    }
+
+    .main-header__title {
+        min-width: 700px;
+        max-width: 1000px;
+        font-size: 4rem;
+        margin-inline: auto;
+    }
+
+    .main-header__description {
+        min-width: 700px;
+        max-width: 1000px;
+        font-size: 2rem;
+        margin-inline: auto;
+    }
+}
