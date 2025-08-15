@@ -6,16 +6,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.main-header {
     background-image:
-            url("background-mobile.png"),
+            url("background2ver.jpg"),
             linear-gradient(to bottom, #093153, transparent);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding: 1.75rem 1.25rem 4rem;
+}
+
+.main-header {
+    padding: 1.75rem 1.25rem 1rem;
 }
 
 .main-header__title {
@@ -43,7 +43,7 @@ body {
 
 .services {
     font-size: 2rem;
-    color: var(--accent-color);
+    color: white;
     margin-block: 1rem 0.5rem;
 }
 
@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: white;
-    background-color: var(--accent-color);
+    background-color:  var(--accent-color);
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
@@ -92,6 +92,7 @@ body {
 
 footer {
     background-color: var(--accent-color);
+    opacity: 75%;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -112,7 +113,7 @@ a {
 
 @media (min-width: 720px) {
     .main-header {
-        height: clamp(20vh, 30vw, 45vh);
+        height: clamp(5vh, 20vw, 15vh);
     }
 
     .main-header__title {
@@ -136,5 +137,9 @@ a {
 
     .services-list {
         grid-auto-flow: column;
+    }
+
+    footer {
+        font-size: 1.5rem;
     }
 }

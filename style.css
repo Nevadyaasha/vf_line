@@ -137,4 +137,8 @@ a {
     .services-list {
         grid-auto-flow: column;
     }
+
+    footer {
+        font-size: 1.5rem;
+    }
 }
